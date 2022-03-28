@@ -50,5 +50,8 @@ class Triplets():
         entities.extend(self.tails)
         self.entities = list(set(entities))
 
+    def __getitem__(self, idx):
+        return self.data[idx]
+
     def __len__(self):
         return len(self.data)
