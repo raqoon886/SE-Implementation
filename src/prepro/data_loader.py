@@ -17,6 +17,13 @@ def load_txt(path, dataset="train"):
 
 
 def entities_decifer(data):
+
+    '''
+    wordnet synset id to synset object
+    :param data: list of triplets
+    :return: list of triplets(decifered)
+    '''
+
     decifered_data = []
     for i, a in enumerate(data):
         tmp = []
